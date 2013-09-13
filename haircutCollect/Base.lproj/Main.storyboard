@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
         </scene>
-        <!--Table View Controller - Third-->
+        <!--Fontech Service View Controller - Third-->
         <scene sceneID="hvf-5l-2C5">
             <objects>
-                <tableViewController id="RFs-xL-hGj" sceneMemberID="viewController">
+                <tableViewController id="RFs-xL-hGj" customClass="fontechServiceViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZaI-tC-bvc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--Fontech Profile View Controller - Item-->
         <scene sceneID="gTN-G6-JNI">
             <objects>
-                <viewController id="6xT-Rr-qDN" sceneMemberID="viewController">
+                <viewController id="6xT-Rr-qDN" customClass="fontechProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kyu-ct-HbK"/>
                         <viewControllerLayoutGuide type="bottom" id="D2c-mP-JjV"/>
@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="653" y="2869"/>
         </scene>
-        <!--Table View Controller - Item-->
+        <!--Fontech Vogues View Controller - Item-->
         <scene sceneID="gdE-Kl-gQ8">
             <objects>
-                <tableViewController id="9px-Um-ro4" sceneMemberID="viewController">
+                <tableViewController id="9px-Um-ro4" customClass="fontechVoguesViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="TEh-ce-AHy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,6 +194,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="first" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
