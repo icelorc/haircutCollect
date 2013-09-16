@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface fontechSecondViewController : UIViewController
+@interface fontechSecondViewController : UIViewController <UIScrollViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @end
