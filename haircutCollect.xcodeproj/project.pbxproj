@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F8571B217E6BF8C00318A9F /* fontechIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8571B117E6BF8C00318A9F /* fontechIntroView.m */; };
 		9FBA29D417E2B51100D428F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBA29D317E2B51100D428F1 /* Foundation.framework */; };
 		9FBA29D617E2B51100D428F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBA29D517E2B51100D428F1 /* CoreGraphics.framework */; };
 		9FBA29D817E2B51100D428F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBA29D717E2B51100D428F1 /* UIKit.framework */; };
@@ -25,6 +26,9 @@
 		9FBA2A0D17E2B9E200D428F1 /* fontechServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA2A0C17E2B9E200D428F1 /* fontechServiceViewController.m */; };
 		9FBA2A1017E2BA3D00D428F1 /* fontechVoguesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA2A0F17E2BA3D00D428F1 /* fontechVoguesViewController.m */; };
 		9FBA2A1617E2BB2200D428F1 /* fontechProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA2A1517E2BB2200D428F1 /* fontechProfileViewController.m */; };
+		9FBA2A1A17E3010500D428F1 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBA2A1717E3010500D428F1 /* image1.jpg */; };
+		9FBA2A1B17E3010500D428F1 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBA2A1817E3010500D428F1 /* image2.jpg */; };
+		9FBA2A1C17E3010500D428F1 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBA2A1917E3010500D428F1 /* image3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F8571B017E6BF8C00318A9F /* fontechIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechIntroView.h; sourceTree = "<group>"; };
+		9F8571B117E6BF8C00318A9F /* fontechIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechIntroView.m; sourceTree = "<group>"; };
 		9FBA29D017E2B51100D428F1 /* haircutCollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haircutCollect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBA29D317E2B51100D428F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9FBA29D517E2B51100D428F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,6 +71,9 @@
 		9FBA2A0F17E2BA3D00D428F1 /* fontechVoguesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechVoguesViewController.m; sourceTree = "<group>"; };
 		9FBA2A1417E2BB2200D428F1 /* fontechProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechProfileViewController.h; sourceTree = "<group>"; };
 		9FBA2A1517E2BB2200D428F1 /* fontechProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechProfileViewController.m; sourceTree = "<group>"; };
+		9FBA2A1717E3010500D428F1 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		9FBA2A1817E3010500D428F1 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		9FBA2A1917E3010500D428F1 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +133,8 @@
 		9FBA29D917E2B51100D428F1 /* haircutCollect */ = {
 			isa = PBXGroup;
 			children = (
+				9F8571B017E6BF8C00318A9F /* fontechIntroView.h */,
+				9F8571B117E6BF8C00318A9F /* fontechIntroView.m */,
 				9FBA29E217E2B51100D428F1 /* fontechAppDelegate.h */,
 				9FBA29E317E2B51100D428F1 /* fontechAppDelegate.m */,
 				9FBA29E517E2B51100D428F1 /* Main.storyboard */,
@@ -138,6 +149,9 @@
 				9FBA2A1417E2BB2200D428F1 /* fontechProfileViewController.h */,
 				9FBA2A1517E2BB2200D428F1 /* fontechProfileViewController.m */,
 				9FBA29EE17E2B51100D428F1 /* Images.xcassets */,
+				9FBA2A1717E3010500D428F1 /* image1.jpg */,
+				9FBA2A1817E3010500D428F1 /* image2.jpg */,
+				9FBA2A1917E3010500D428F1 /* image3.jpg */,
 				9FBA29DA17E2B51100D428F1 /* Supporting Files */,
 			);
 			path = haircutCollect;
@@ -250,6 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FBA29EF17E2B51100D428F1 /* Images.xcassets in Resources */,
+				9FBA2A1B17E3010500D428F1 /* image2.jpg in Resources */,
+				9FBA2A1A17E3010500D428F1 /* image1.jpg in Resources */,
+				9FBA2A1C17E3010500D428F1 /* image3.jpg in Resources */,
 				9FBA29DE17E2B51100D428F1 /* InfoPlist.strings in Resources */,
 				9FBA29E717E2B51100D428F1 /* Main.storyboard in Resources */,
 			);
@@ -273,6 +290,7 @@
 				9FBA2A0D17E2B9E200D428F1 /* fontechServiceViewController.m in Sources */,
 				9FBA2A1017E2BA3D00D428F1 /* fontechVoguesViewController.m in Sources */,
 				9FBA29EA17E2B51100D428F1 /* fontechFirstViewController.m in Sources */,
+				9F8571B217E6BF8C00318A9F /* fontechIntroView.m in Sources */,
 				9FBA29E417E2B51100D428F1 /* fontechAppDelegate.m in Sources */,
 				9FBA2A1617E2BB2200D428F1 /* fontechProfileViewController.m in Sources */,
 				9FBA29ED17E2B51100D428F1 /* fontechSecondViewController.m in Sources */,
@@ -479,6 +497,7 @@
 				9FBA2A0717E2B51100D428F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FBA2A0817E2B51100D428F1 /* Build configuration list for PBXNativeTarget "haircutCollectTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +506,7 @@
 				9FBA2A0A17E2B51100D428F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
