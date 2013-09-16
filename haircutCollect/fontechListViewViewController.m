@@ -1,18 +1,18 @@
 //
-//  fontechVoguesViewController.m
+//  fontechListViewViewController.m
 //  haircutCollect
 //
-//  Created by Robert Huang on 9/13/13.
+//  Created by Robert Huang on 9/16/13.
 //  Copyright (c) 2013 Robert Huang. All rights reserved.
 //
 
-#import "fontechVoguesViewController.h"
+#import "fontechListViewViewController.h"
 
-@interface fontechVoguesViewController ()
+@interface fontechListViewViewController ()
 
 @end
 
-@implementation fontechVoguesViewController
+@implementation fontechListViewViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -45,32 +45,30 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"voguesCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = @"燙";
-    cell.detailTextLabel.text = @"Stylist, Senior Stylist, Top Stylist, Artistic Team, Artistic Director.";
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FontCell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"FontCell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+
+    cell.textLabel.text = @"Robert Huang";
+    cell.detailTextLabel.text = @"N.T 1600";
     
     // Configure the cell...
     
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    fontechListViewViewController *listViewController = [[fontechListViewViewController alloc] initWithStyle:UITableViewStylePlain];
-    [self.navigationController pushViewController:listViewController animated:YES];
-    
 }
 
 /*

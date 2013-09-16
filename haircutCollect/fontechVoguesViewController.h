@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "fontechListViewViewController.h"
 
-@interface fontechVoguesViewController : UITableViewController
+@interface fontechVoguesViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
