@@ -10,4 +10,9 @@
 
 @interface fontechDesignerView : UIView
 
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) UITextView *textView;
+
 @end

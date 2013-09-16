@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "fontechDesignerView.h"
 
 @interface fontechSecondViewController : UIViewController <UIScrollViewDelegate>
 
