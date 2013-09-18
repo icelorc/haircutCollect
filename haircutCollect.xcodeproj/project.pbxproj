@@ -32,6 +32,7 @@
 		9FBA2A0217E2B51100D428F1 /* haircutCollectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA2A0117E2B51100D428F1 /* haircutCollectTests.m */; };
 		9FBA2A0D17E2B9E200D428F1 /* fontechServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA2A0C17E2B9E200D428F1 /* fontechServiceViewController.m */; };
 		9FBA2A1017E2BA3D00D428F1 /* fontechVoguesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA2A0F17E2BA3D00D428F1 /* fontechVoguesViewController.m */; };
+		9FE1891017E9463000D17345 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FE1890F17E9463000D17345 /* image4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		9FBA2A0C17E2B9E200D428F1 /* fontechServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechServiceViewController.m; sourceTree = "<group>"; };
 		9FBA2A0E17E2BA3D00D428F1 /* fontechVoguesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechVoguesViewController.h; sourceTree = "<group>"; };
 		9FBA2A0F17E2BA3D00D428F1 /* fontechVoguesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechVoguesViewController.m; sourceTree = "<group>"; };
+		9FE1890F17E9463000D17345 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				9F8A5B3C17E822BB00641C59 /* image1.jpg */,
 				9F8A5B3D17E822BB00641C59 /* image2.jpg */,
 				9F8A5B3A17E822B000641C59 /* image3.jpg */,
+				9FE1890F17E9463000D17345 /* image4.jpg */,
 				9FBA29EE17E2B51100D428F1 /* Images.xcassets */,
 				9FBA29DA17E2B51100D428F1 /* Supporting Files */,
 			);
@@ -284,6 +287,7 @@
 				9F8A5B3B17E822B000641C59 /* image3.jpg in Resources */,
 				9FBA29DE17E2B51100D428F1 /* InfoPlist.strings in Resources */,
 				9FBA29E717E2B51100D428F1 /* Main.storyboard in Resources */,
+				9FE1891017E9463000D17345 /* image4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
