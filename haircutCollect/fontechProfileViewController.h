@@ -11,5 +11,6 @@
 @interface fontechProfileViewController : UITableViewController <UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *phoneButton;
+@property (weak, nonatomic) IBOutlet UIButton *addressButton;
 
 @end

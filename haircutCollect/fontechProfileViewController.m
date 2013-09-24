@@ -14,6 +14,7 @@
 
 @implementation fontechProfileViewController
 @synthesize phoneButton = _phoneButton;
+@synthesize addressButton = _addressButton;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -47,9 +48,11 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Announcement" message: @"It turns out that you are playing Addicus!" delegate: self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK",nil];
     
     [alert show];
-    
 
+}
 
+- (IBAction)addressButtonAction:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://maps.apple.com/?daddr=2F.,+No.263,+Sec.+1,+Dunhua+S+Rd.,+Da'an+Dist,+Taipei+City"]];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger )buttonIndex {
@@ -58,7 +61,7 @@
       
     
     } else {
-         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:+886972297185"]];    
+         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:0227027088"]];
     }
 
 }
