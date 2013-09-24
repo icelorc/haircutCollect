@@ -33,6 +33,7 @@
 		9FBA2A0D17E2B9E200D428F1 /* fontechServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA2A0C17E2B9E200D428F1 /* fontechServiceViewController.m */; };
 		9FBA2A1017E2BA3D00D428F1 /* fontechVoguesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA2A0F17E2BA3D00D428F1 /* fontechVoguesViewController.m */; };
 		9FBD661317F1435900CAF5BE /* fontechSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD661217F1435900CAF5BE /* fontechSearchViewController.m */; };
+		9FBD661617F1496200CAF5BE /* fontechFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD661517F1496200CAF5BE /* fontechFacebookViewController.m */; };
 		9FE1891017E9463000D17345 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FE1890F17E9463000D17345 /* image4.jpg */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,8 @@
 		9FBA2A0F17E2BA3D00D428F1 /* fontechVoguesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechVoguesViewController.m; sourceTree = "<group>"; };
 		9FBD661117F1435900CAF5BE /* fontechSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechSearchViewController.h; sourceTree = "<group>"; };
 		9FBD661217F1435900CAF5BE /* fontechSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechSearchViewController.m; sourceTree = "<group>"; };
+		9FBD661417F1496200CAF5BE /* fontechFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechFacebookViewController.h; sourceTree = "<group>"; };
+		9FBD661517F1496200CAF5BE /* fontechFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechFacebookViewController.m; sourceTree = "<group>"; };
 		9FE1890F17E9463000D17345 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +156,8 @@
 				9FA9FC2917E82643006C84E9 /* fontechProfileViewController.h */,
 				9FA9FC2A17E82643006C84E9 /* fontechProfileViewController.m */,
 				9FBA29E517E2B51100D428F1 /* Main.storyboard */,
+				9FBD661417F1496200CAF5BE /* fontechFacebookViewController.h */,
+				9FBD661517F1496200CAF5BE /* fontechFacebookViewController.m */,
 				9FBD661117F1435900CAF5BE /* fontechSearchViewController.h */,
 				9FBD661217F1435900CAF5BE /* fontechSearchViewController.m */,
 				9FBA29E817E2B51100D428F1 /* fontechFirstViewController.h */,
@@ -320,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FBD661317F1435900CAF5BE /* fontechSearchViewController.m in Sources */,
+				9FBD661617F1496200CAF5BE /* fontechFacebookViewController.m in Sources */,
 				9FBA2A0D17E2B9E200D428F1 /* fontechServiceViewController.m in Sources */,
 				9FBA2A1017E2BA3D00D428F1 /* fontechVoguesViewController.m in Sources */,
 				9FBA29EA17E2B51100D428F1 /* fontechFirstViewController.m in Sources */,
