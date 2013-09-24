@@ -144,12 +144,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone: 02-2234-2968" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDu-4w-0Ss">
-                                                    <rect key="frame" x="20" y="11" width="168" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDu-4w-0Ss">
+                                                    <rect key="frame" x="20" y="11" width="0.0" height="0.0"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPG-7i-o92">
+                                                    <rect key="frame" x="20" y="7" width="144" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Phone: 02-27027088">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="phoneButtonAction:" destination="Hoi-at-oY5" eventType="touchUpInside" id="xuK-HU-brm"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -214,15 +224,18 @@
                         </sections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Profile" id="55U-d3-ZXv"/>
+                    <connections>
+                        <outlet property="phoneButton" destination="hPG-7i-o92" id="CD4-V2-jmR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QcL-Uj-6NH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1431" y="3203"/>
         </scene>
-        <!--Fontech Facebook View Controller - Item-->
+        <!--Fontech Facebook View Controller - Facebook-->
         <scene sceneID="MzM-dk-HIN">
             <objects>
-                <viewController id="2Es-dx-0GZ" customClass="fontechFacebookViewController" sceneMemberID="viewController">
+                <viewController title="Facebook" id="2Es-dx-0GZ" customClass="fontechFacebookViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xpV-t0-iU3"/>
                         <viewControllerLayoutGuide type="bottom" id="aOn-E5-l2f"/>
@@ -242,7 +255,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="lVp-X3-t2W"/>
+                    <tabBarItem key="tabBarItem" title="Facebook" id="lVp-X3-t2W"/>
                     <connections>
                         <outlet property="webView" destination="gY8-8y-0SO" id="Zqz-jn-Lj0"/>
                     </connections>

@@ -13,6 +13,7 @@
 @end
 
 @implementation fontechProfileViewController
+@synthesize phoneButton = _phoneButton;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -38,6 +39,28 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)phoneButtonAction:(id)sender {
+
+
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Announcement" message: @"It turns out that you are playing Addicus!" delegate: self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK",nil];
+    
+    [alert show];
+    
+
+
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger )buttonIndex {
+    
+    if (buttonIndex == 0) {
+      
+    
+    } else {
+         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:+886972297185"]];    
+    }
+
 }
 
 

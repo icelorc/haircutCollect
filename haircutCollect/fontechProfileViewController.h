@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface fontechProfileViewController : UITableViewController
+@interface fontechProfileViewController : UITableViewController <UIAlertViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *phoneButton;
 
 @end
