@@ -40,7 +40,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Intro" image="first" id="u1e-5L-l1D"/>
                     <navigationItem key="navigationItem" title="First" id="sL5-Te-k5O"/>
                     <connections>
                         <outlet property="pageControl" destination="tEP-6T-Rb3" id="Cgy-ci-Tay"/>
@@ -389,7 +389,7 @@
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
-        <!--Fontech Vogues View Controller - Vogues-->
+        <!--Fontech Vogues View Controller - Service-->
         <scene sceneID="A51-zJ-gtP">
             <objects>
                 <tableViewController id="CtN-BH-6lZ" customClass="fontechVoguesViewController" sceneMemberID="viewController">
@@ -428,17 +428,17 @@
                             <outlet property="delegate" destination="CtN-BH-6lZ" id="ix0-W3-f7p"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Vogues" id="Wnc-4u-GnM"/>
+                    <navigationItem key="navigationItem" title="Service" id="Wnc-4u-GnM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyb-eB-bxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1555" y="1348"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Service-->
         <scene sceneID="T8v-mO-XbY">
             <objects>
                 <navigationController definesPresentationContext="YES" id="YjX-nn-Py8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="first" id="Jzm-a7-kL9"/>
+                    <tabBarItem key="tabBarItem" title="Service" image="first" id="Jzm-a7-kL9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gxi-CS-Joy">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -524,7 +524,11 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="first" width="30" height="30"/>
+        <image name="first" width="30" height="30"/>
         <image name="image4.jpg" width="800" height="585"/>
+        <image name="second" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
