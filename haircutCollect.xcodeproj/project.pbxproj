@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F559E5017F2DD6C001C9D18 /* inside1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F559E4F17F2DD6C001C9D18 /* inside1.jpg */; };
 		9F8571B217E6BF8C00318A9F /* fontechIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8571B117E6BF8C00318A9F /* fontechIntroView.m */; };
 		9F8571B517E6CBF100318A9F /* fontechListViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8571B417E6CBF100318A9F /* fontechListViewViewController.m */; };
 		9F8571B817E6F33200318A9F /* fontechDesignerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F8571B717E6F33200318A9F /* fontechDesignerView.m */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F559E4F17F2DD6C001C9D18 /* inside1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inside1.jpg; sourceTree = "<group>"; };
 		9F8571B017E6BF8C00318A9F /* fontechIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechIntroView.h; sourceTree = "<group>"; };
 		9F8571B117E6BF8C00318A9F /* fontechIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechIntroView.m; sourceTree = "<group>"; };
 		9F8571B317E6CBF100318A9F /* fontechListViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechListViewViewController.h; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				9FBA2A0F17E2BA3D00D428F1 /* fontechVoguesViewController.m */,
 				9F8571B317E6CBF100318A9F /* fontechListViewViewController.h */,
 				9F8571B417E6CBF100318A9F /* fontechListViewViewController.m */,
+				9F559E4F17F2DD6C001C9D18 /* inside1.jpg */,
 				9F8A5B3C17E822BB00641C59 /* image1.jpg */,
 				9F8A5B3D17E822BB00641C59 /* image2.jpg */,
 				9F8A5B3A17E822B000641C59 /* image3.jpg */,
@@ -301,6 +304,7 @@
 			files = (
 				9F8A5B3F17E822BB00641C59 /* image2.jpg in Resources */,
 				9FBA29EF17E2B51100D428F1 /* Images.xcassets in Resources */,
+				9F559E5017F2DD6C001C9D18 /* inside1.jpg in Resources */,
 				9F8A5B3E17E822BB00641C59 /* image1.jpg in Resources */,
 				9F8A5B3B17E822B000641C59 /* image3.jpg in Resources */,
 				9FBA29DE17E2B51100D428F1 /* InfoPlist.strings in Resources */,
