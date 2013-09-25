@@ -18,6 +18,9 @@
     self = [super initWithFrame:frame];
     if (self) {
 
+        [self.layer setBorderColor:[UIColor lightGrayColor].CGColor ];
+        [self.layer setBorderWidth:1.5f];
+        [self.layer setCornerRadius:15.0f];
         self.textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 250, 320, 250)];
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 50, 320, 200)];
         [self addSubview:self.textView];

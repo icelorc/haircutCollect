@@ -28,8 +28,7 @@
         frame.origin.x = self.scrollView.frame.size.width * i;
         frame.origin.y = 0;
         frame.size = self.scrollView.frame.size;
-        
-        fontechIntroView *introView = [[fontechIntroView alloc] initWithFrame:frame];
+        fontechIntroView *introView = [[fontechIntroView alloc] initWithFrame:CGRectMake(frame.origin.x + 5, frame.origin.y + 5, self.scrollView.frame.size.width - 10, self.scrollView.frame.size.height - 10)];
         introView.imageView.image = [UIImage imageNamed:[viewArray objectAtIndex:i]];
         introView.textView.text = @"Test\n This is a text";
         [self.scrollView addSubview:introView];
