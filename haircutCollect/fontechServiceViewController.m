@@ -60,10 +60,11 @@
 {
     static NSString *CellIdentifier = @"serviceCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UIImageView *designerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 0, 85, 85)];
+    designerImageView.image = [UIImage imageNamed:@"image1.jpg"];
     cell.textLabel.text = @"Robert Huang";
     cell.detailTextLabel.text = @"Artistic Director";
-    cell.imageView.image = [UIImage imageNamed:@"image1.jpg"];
-    
+    [cell addSubview:designerImageView];
     
     return cell;
 }
