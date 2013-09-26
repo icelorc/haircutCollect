@@ -44,14 +44,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 1;
 }
@@ -62,9 +60,23 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     UIImageView *designerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 0, 85, 85)];
     designerImageView.image = [UIImage imageNamed:@"image1.jpg"];
-    cell.textLabel.text = @"Robert Huang";
-    cell.detailTextLabel.text = @"Artistic Director";
+
+    UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 15, 150, 15)];
+    nameLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 35, 150, 15)];
+    titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
+    UILabel *telLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 47, 150, 15)];
+    telLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
+    
+    nameLabel.text = @"Ivan Huang";
+    titleLabel.text = @"Artistic Director";
+    telLabel.text = @"預約專線：02 -2702-7088";
+    
+    
     [cell addSubview:designerImageView];
+    [cell addSubview:nameLabel];
+    [cell addSubview:titleLabel];
+    [cell addSubview:telLabel];
     
     return cell;
 }
