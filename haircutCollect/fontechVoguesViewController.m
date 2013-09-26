@@ -58,9 +58,20 @@
 {
     static NSString *CellIdentifier = @"voguesCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    UILabel *itemLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 30, 30)];
+    UILabel *itemLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 30, 15)];
+    itemLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
+    UILabel *telLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 40, 200, 15)];
+    telLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
+    UILabel *detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 60, 200, 15)];
+    detailLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
+    
     itemLabel.text = @"燙";
+    telLabel.text = @"預約專線：02-2702-7088";
+    detailLabel.text = @"剪髮、洗髮、造型";
+    
     [cell addSubview:itemLabel];
+    [cell addSubview:telLabel];
+    [cell addSubview: detailLabel];
     
     // Configure the cell...
     
