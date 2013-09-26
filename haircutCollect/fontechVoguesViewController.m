@@ -58,8 +58,9 @@
 {
     static NSString *CellIdentifier = @"voguesCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = @"燙";
-    cell.detailTextLabel.text = @"Stylist, Senior Stylist, Top Stylist, Artistic Team, Artistic Director.";
+    UILabel *itemLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 30, 30)];
+    itemLabel.text = @"燙";
+    [cell addSubview:itemLabel];
     
     // Configure the cell...
     

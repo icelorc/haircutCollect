@@ -19,13 +19,17 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 10, 100, 100)];
-        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(200, 30, 100, 30)];
+        [self.layer setBorderColor:[UIColor lightGrayColor].CGColor ];
+        [self.layer setBorderWidth:1.5f];
+        [self.layer setCornerRadius:15.0f];
+        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(40, 30, 70, 70)];
+        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 100, 30)];
+        self.titleLabel.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         self.nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(200, 80, 100, 30)];
         self.textView = [[UITextView alloc] initWithFrame:CGRectMake(20, 160, 280, 350)];
         self.textView.scrollEnabled = YES;
         self.textView.editable = NO;
-        
+        self.backgroundColor = [UIColor whiteColor];
         [self addSubview:self.imageView];
         [self addSubview:self.titleLabel];
         [self addSubview:self.nameLabel];
