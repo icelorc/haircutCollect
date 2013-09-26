@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "fontechListViewViewController.h"
+#import "fontechServiceDetailViewController.h"
 
 @interface fontechVoguesViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 

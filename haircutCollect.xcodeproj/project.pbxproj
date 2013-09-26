@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F263DB317F4206500B87D63 /* fontechServiceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F263DB217F4206500B87D63 /* fontechServiceDetailViewController.m */; };
 		9F559E5017F2DD6C001C9D18 /* inside1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F559E4F17F2DD6C001C9D18 /* inside1.jpg */; };
 		9F559E5217F2E11F001C9D18 /* inside2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F559E5117F2E11F001C9D18 /* inside2.jpg */; };
 		9F559E5417F2E12B001C9D18 /* inside3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F559E5317F2E12B001C9D18 /* inside3.jpg */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F263DB117F4206500B87D63 /* fontechServiceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechServiceDetailViewController.h; sourceTree = "<group>"; };
+		9F263DB217F4206500B87D63 /* fontechServiceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechServiceDetailViewController.m; sourceTree = "<group>"; };
 		9F559E4F17F2DD6C001C9D18 /* inside1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inside1.jpg; sourceTree = "<group>"; };
 		9F559E5117F2E11F001C9D18 /* inside2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inside2.jpg; sourceTree = "<group>"; };
 		9F559E5317F2E12B001C9D18 /* inside3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inside3.jpg; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				9FA9FC2917E82643006C84E9 /* fontechProfileViewController.h */,
 				9FA9FC2A17E82643006C84E9 /* fontechProfileViewController.m */,
 				9FBA29E517E2B51100D428F1 /* Main.storyboard */,
+				9F263DB117F4206500B87D63 /* fontechServiceDetailViewController.h */,
+				9F263DB217F4206500B87D63 /* fontechServiceDetailViewController.m */,
 				9FBD661417F1496200CAF5BE /* fontechFacebookViewController.h */,
 				9FBD661517F1496200CAF5BE /* fontechFacebookViewController.m */,
 				9FBD661117F1435900CAF5BE /* fontechSearchViewController.h */,
@@ -347,6 +352,7 @@
 				9FA9FC2B17E82643006C84E9 /* fontechProfileViewController.m in Sources */,
 				9F8571B517E6CBF100318A9F /* fontechListViewViewController.m in Sources */,
 				9FBA29ED17E2B51100D428F1 /* fontechSecondViewController.m in Sources */,
+				9F263DB317F4206500B87D63 /* fontechServiceDetailViewController.m in Sources */,
 				9FBA29E017E2B51100D428F1 /* main.m in Sources */,
 				9F8A5B3917E81A5100641C59 /* fontechDesignerProjectsViewController.m in Sources */,
 			);

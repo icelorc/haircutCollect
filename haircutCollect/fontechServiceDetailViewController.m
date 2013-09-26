@@ -1,24 +1,27 @@
 //
-//  fontechVoguesViewController.m
+//  fontechServiceDetailViewController.m
 //  haircutCollect
 //
-//  Created by Robert Huang on 9/13/13.
+//  Created by Robert Huang on 9/26/13.
 //  Copyright (c) 2013 Robert Huang. All rights reserved.
 //
 
-#import "fontechVoguesViewController.h"
+#import "fontechServiceDetailViewController.h"
 
-@interface fontechVoguesViewController ()
+@interface fontechServiceDetailViewController ()
 
 @end
 
-@implementation fontechVoguesViewController
+@implementation fontechServiceDetailViewController
+
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        self = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"fontechServiceDetailViewController"];
+    
     }
     return self;
 }
@@ -45,44 +48,23 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 3;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+
     // Return the number of rows in the section.
-    return 1;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"voguesCell";
+    static NSString *CellIdentifier = @"serviceDetailCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    UILabel *itemLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 30, 15)];
-    itemLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
-    UILabel *telLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 40, 200, 15)];
-    telLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
-    UILabel *detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 60, 200, 15)];
-    detailLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
     
-    itemLabel.text = @"燙";
-    telLabel.text = @"預約專線：02-2702-7088";
-    detailLabel.text = @"剪髮、洗髮、造型";
-    
-    [cell addSubview:itemLabel];
-    [cell addSubview:telLabel];
-    [cell addSubview: detailLabel];
-    
-    // Configure the cell...
     
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    fontechServiceDetailViewController *serviceDetailViewController = [[fontechServiceDetailViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    [self.navigationController pushViewController:serviceDetailViewController animated:YES];
-    
 }
 
 /*
