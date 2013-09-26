@@ -393,16 +393,16 @@
         <scene sceneID="A51-zJ-gtP">
             <objects>
                 <tableViewController id="CtN-BH-6lZ" customClass="fontechVoguesViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gLQ-u9-N2b">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="72" sectionHeaderHeight="6" sectionFooterHeight="6" id="gLQ-u9-N2b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="voguesCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="voguesCell" rowHeight="76" id="ZsD-Tx-uAf">
-                                <rect key="frame" x="0.0" y="86" width="320" height="76"/>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="voguesCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="voguesCell" rowHeight="72" id="ZsD-Tx-uAf">
+                                <rect key="frame" x="0.0" y="119" width="320" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZsD-Tx-uAf" id="xgw-aK-QJp">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="75"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="71"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

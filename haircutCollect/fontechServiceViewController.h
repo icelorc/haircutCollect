@@ -10,4 +10,8 @@
 
 @interface fontechServiceViewController : UITableViewController
 
+@property (nonatomic, retain) NSArray *nameArray;
+@property (nonatomic, retain) NSArray *titleArray;
+@property (nonatomic, retain) NSArray *imageArray;
+
 @end

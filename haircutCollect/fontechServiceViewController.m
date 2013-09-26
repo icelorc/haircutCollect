@@ -14,6 +14,10 @@
 
 @implementation fontechServiceViewController
 
+@synthesize nameArray = _nameArray;
+@synthesize titleArray = _titleArray;
+@synthesize imageArray = _imageArray;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -26,6 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.nameArray = [NSArray arrayWithObjects:@"Ivan Huang", @"John Chen", @"Betty Yeh", @"Ging Shih", @"Louis Chen", nil];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -45,7 +51,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 3;
+    return [self.nameArray count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -68,7 +74,7 @@
     UILabel *telLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 47, 150, 15)];
     telLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
     
-    nameLabel.text = @"Ivan Huang";
+    nameLabel.text = [self.nameArray objectAtIndex:indexPath.section];
     titleLabel.text = @"Artistic Director";
     telLabel.text = @"預約專線：02 -2702-7088";
     
