@@ -14,13 +14,23 @@
 
 @implementation fontechServiceDetailViewController
 
+@synthesize titleArray = _titleArray;
+@synthesize subTitleArray = _subTitleArray;
 
+- (id)initWithTitleArray:(NSArray *)titleArray subTitleArray:(NSArray *)subTitleArray {
+    if (self) {
+        self = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"fontechServiceDetailViewController"];
+        self.titleArray = [NSArray arrayWithArray:titleArray];
+        self.subTitleArray = [NSArray arrayWithArray:subTitleArray];
+    }
+    
+    return self;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        self = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"fontechServiceDetailViewController"];
     
     }
     return self;
@@ -30,11 +40,6 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,14 +53,14 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return [self.titleArray count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -63,6 +68,16 @@
     static NSString *CellIdentifier = @"serviceDetailCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    UILabel *itemLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 200, 15)];
+    itemLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
+    UILabel *detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 60, 300, 15)];
+    detailLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
+    
+    itemLabel.text = [self.titleArray objectAtIndex:indexPath.section];
+    detailLabel.text = [self.subTitleArray objectAtIndex:indexPath.section];
+    
+    [cell addSubview:itemLabel];
+    [cell addSubview:detailLabel];
     
     return cell;
 }

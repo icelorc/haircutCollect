@@ -58,6 +58,7 @@
 {
     static NSString *CellIdentifier = @"voguesCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
     UILabel *itemLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 30, 15)];
     itemLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
     UILabel *telLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 40, 200, 15)];
@@ -80,7 +81,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    fontechServiceDetailViewController *serviceDetailViewController = [[fontechServiceDetailViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    NSArray *titleArray = [NSArray arrayWithObjects:@"Cut 剪髮",@"Shampoo Blowdrying 洗髮 ", @"Dressing 造型", nil];
+    NSArray *subTitleArray = [NSArray arrayWithObjects:@"Stylist, Senior Stylist, Top Stylist, Artistic team", @"Stylist, Senior Stylist, Top Stylist, Artistic team", @"Stylist, Senior Stylist, Top Stylist, Artistic team", nil];
+    
+    fontechServiceDetailViewController *serviceDetailViewController = [[fontechServiceDetailViewController alloc] initWithTitleArray:titleArray subTitleArray:subTitleArray];
     [self.navigationController pushViewController:serviceDetailViewController animated:YES];
     
 }

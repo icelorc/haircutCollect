@@ -10,4 +10,9 @@
 
 @interface fontechServiceDetailViewController : UITableViewController
 
+@property (nonatomic, retain) NSArray *titleArray;
+@property (nonatomic, retain) NSArray *subTitleArray;
+
+- (id)initWithTitleArray:(NSArray *)titleArray subTitleArray:(NSArray *)subTitleArray;
+
 @end
