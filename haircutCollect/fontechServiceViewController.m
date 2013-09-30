@@ -32,12 +32,8 @@
     [super viewDidLoad];
     
     self.nameArray = [NSArray arrayWithObjects:@"Ivan Huang", @"John Chen", @"Betty Yeh", @"Ging Shih", @"Louis Chen", nil];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.imageArray = [NSArray arrayWithObjects:@"designer1.jpg", @"designer2.jpg", @"designer3.jpg", @"designer4.jpg", @"designer5.jpg", nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,7 +61,7 @@
     static NSString *CellIdentifier = @"serviceCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     UIImageView *designerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 0, 85, 85)];
-    designerImageView.image = [UIImage imageNamed:@"image1.jpg"];
+    designerImageView.image = [UIImage imageNamed:[self.imageArray objectAtIndex:indexPath.section]];
 
     UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 15, 150, 15)];
     nameLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
