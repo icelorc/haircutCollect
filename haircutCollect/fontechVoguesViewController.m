@@ -14,6 +14,10 @@
 
 @implementation fontechVoguesViewController
 
+@synthesize itemArray = _itemArray;
+@synthesize detailArray = _detailArray;
+
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -26,12 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.itemArray = [NSArray arrayWithObjects:@"剪", @"燙", @"染", nil];
+    self.detailArray =[NSArray arrayWithObjects:@"剪髮、洗髮、造型", @"燙髮項目、護髮像髮", @"染髮項目、護髮項目", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,7 +45,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 3;
+    return [self.itemArray count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -66,9 +66,9 @@
     UILabel *detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 60, 200, 15)];
     detailLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
     
-    itemLabel.text = @"燙";
+    itemLabel.text = [self.itemArray objectAtIndex:indexPath.section];
     telLabel.text = @"預約專線：02-2702-7088";
-    detailLabel.text = @"剪髮、洗髮、造型";
+    detailLabel.text = [self.detailArray objectAtIndex:indexPath.section];
     
     [cell addSubview:itemLabel];
     [cell addSubview:telLabel];
@@ -81,8 +81,27 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *titleArray = [NSArray arrayWithObjects:@"Cut 剪髮",@"Shampoo Blowdrying 洗髮 ", @"Dressing 造型", nil];
-    NSArray *subTitleArray = [NSArray arrayWithObjects:@"Stylist, Senior Stylist, Top Stylist, Artistic team", @"Stylist, Senior Stylist, Top Stylist, Artistic team", @"Stylist, Senior Stylist, Top Stylist, Artistic team", nil];
+    
+    NSArray *titleArray;
+    NSArray *subTitleArray;
+    switch (indexPath.section) {
+        case 0:
+            titleArray = [NSArray arrayWithObjects:@"Cut 剪髮",@"Shampoo Blowdrying 洗髮 ", @"Dressing 造型", nil];
+            subTitleArray = [NSArray arrayWithObjects:@"Stylist, Senior Stylist, Top Stylist, Artistic team", @"Stylist, Senior Stylist, Top Stylist, Artistic team", @"Stylist, Senior Stylist, Top Stylist, Artistic team", nil];
+            break;
+        case 1:
+            titleArray = [NSArray arrayWithObjects:@"燙髮項目", @"護髮項目", nil];
+            subTitleArray = [NSArray arrayWithObjects:@"局部燙髮、直燙髮、彈性燙髮、直立燙髮、特殊燙髮", @"染燙前後護理、一般燙髮、魚子醬護髮", nil];
+            break;
+        case 2:
+            titleArray = [NSArray arrayWithObjects:@"染髮項目", @"護髮項目", nil];
+            subTitleArray = [NSArray arrayWithObjects:@"挑染、局部染、挑+底染、創意染、洗色、護染", @"染燙前後護理、一把護髮、魚子醬護髮", nil];
+            
+            break;
+        default:
+            break;
+    }
+    
     
     fontechServiceDetailViewController *serviceDetailViewController = [[fontechServiceDetailViewController alloc] initWithTitleArray:titleArray subTitleArray:subTitleArray];
     [self.navigationController pushViewController:serviceDetailViewController animated:YES];

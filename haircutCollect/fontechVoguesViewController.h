@@ -12,4 +12,7 @@
 
 @interface fontechVoguesViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, retain) NSArray *itemArray;
+@property (nonatomic, retain) NSArray *detailArray;
+
 @end
