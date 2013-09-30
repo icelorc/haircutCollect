@@ -18,6 +18,7 @@
 		9F8A5B3B17E822B000641C59 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F8A5B3A17E822B000641C59 /* image3.jpg */; };
 		9F8A5B3E17E822BB00641C59 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F8A5B3C17E822BB00641C59 /* image1.jpg */; };
 		9F8A5B3F17E822BB00641C59 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F8A5B3D17E822BB00641C59 /* image2.jpg */; };
+		9FA9004217F9547F006CD201 /* fontechServiceDetailPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA9004117F9547F006CD201 /* fontechServiceDetailPriceViewController.m */; };
 		9FA9FC2B17E82643006C84E9 /* fontechProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA9FC2A17E82643006C84E9 /* fontechProfileViewController.m */; };
 		9FBA29D417E2B51100D428F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBA29D317E2B51100D428F1 /* Foundation.framework */; };
 		9FBA29D617E2B51100D428F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBA29D517E2B51100D428F1 /* CoreGraphics.framework */; };
@@ -68,6 +69,8 @@
 		9F8A5B3A17E822B000641C59 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
 		9F8A5B3C17E822BB00641C59 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		9F8A5B3D17E822BB00641C59 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		9FA9004017F9547F006CD201 /* fontechServiceDetailPriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechServiceDetailPriceViewController.h; sourceTree = "<group>"; };
+		9FA9004117F9547F006CD201 /* fontechServiceDetailPriceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechServiceDetailPriceViewController.m; sourceTree = "<group>"; };
 		9FA9FC2917E82643006C84E9 /* fontechProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechProfileViewController.h; sourceTree = "<group>"; };
 		9FA9FC2A17E82643006C84E9 /* fontechProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechProfileViewController.m; sourceTree = "<group>"; };
 		9FBA29D017E2B51100D428F1 /* haircutCollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haircutCollect.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +184,8 @@
 				9F8A5B3817E81A5100641C59 /* fontechDesignerProjectsViewController.m */,
 				9FBA2A0E17E2BA3D00D428F1 /* fontechVoguesViewController.h */,
 				9FBA2A0F17E2BA3D00D428F1 /* fontechVoguesViewController.m */,
+				9FA9004017F9547F006CD201 /* fontechServiceDetailPriceViewController.h */,
+				9FA9004117F9547F006CD201 /* fontechServiceDetailPriceViewController.m */,
 				9F8571B317E6CBF100318A9F /* fontechListViewViewController.h */,
 				9F8571B417E6CBF100318A9F /* fontechListViewViewController.m */,
 				9F559E4F17F2DD6C001C9D18 /* inside1.jpg */,
@@ -341,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA9004217F9547F006CD201 /* fontechServiceDetailPriceViewController.m in Sources */,
 				9FBD661317F1435900CAF5BE /* fontechSearchViewController.m in Sources */,
 				9FBD661617F1496200CAF5BE /* fontechFacebookViewController.m in Sources */,
 				9FBA2A0D17E2B9E200D428F1 /* fontechServiceViewController.m in Sources */,

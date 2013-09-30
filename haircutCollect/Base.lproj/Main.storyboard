@@ -448,6 +448,34 @@
             </objects>
             <point key="canvasLocation" x="2069" y="1355"/>
         </scene>
+        <!--Fontech Service Detail Price View Controller-->
+        <scene sceneID="kCz-52-a4t">
+            <objects>
+                <tableViewController id="HHi-Pq-u73" customClass="fontechServiceDetailPriceViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="o23-JH-bHF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="B0S-sa-BGf">
+                                <rect key="frame" x="0.0" y="55" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B0S-sa-BGf" id="NhL-Yz-FGn">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HHi-Pq-u73" id="hxZ-s4-sYE"/>
+                            <outlet property="delegate" destination="HHi-Pq-u73" id="Dxr-ej-x1f"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JmO-1Q-T9j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2539" y="1355"/>
+        </scene>
         <!--Navigation Controller - Service-->
         <scene sceneID="T8v-mO-XbY">
             <objects>
