@@ -161,6 +161,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FA9006517FAA939006CD201 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9FA9005D17FAA46D006CD201 /* people_@2x.png */,
+				9FA9005F17FAA4B2006CD201 /* photos_polaroid@2x.png */,
+				9FA9006117FAA505006CD201 /* heart@2x.png */,
+				9FA9006317FAA58E006CD201 /* brief_case@2x.png */,
+				9FA9004317F96F20006CD201 /* project1.jpg */,
+				9FA9004417F96F20006CD201 /* project2.jpg */,
+				9FA9004F17F970BB006CD201 /* project3.jpg */,
+				9FA9004617F96F20006CD201 /* project4.jpg */,
+				9FA9004717F96F20006CD201 /* project5.jpg */,
+				9FA9004817F96F20006CD201 /* project6.jpg */,
+				9F8A5B3A17E822B000641C59 /* image3.jpg */,
+				9FA9005217F97329006CD201 /* designer2.jpg */,
+				9FA9005317F97329006CD201 /* designer3.jpg */,
+				9FA9005117F97329006CD201 /* designer1.jpg */,
+				9FA9005417F97329006CD201 /* designer4.jpg */,
+				9FA9005917F974DD006CD201 /* designer5.jpg */,
+				9F559E4F17F2DD6C001C9D18 /* inside1.jpg */,
+				9F559E5117F2E11F001C9D18 /* inside2.jpg */,
+				9F559E5317F2E12B001C9D18 /* inside3.jpg */,
+				9F8A5B3D17E822BB00641C59 /* image2.jpg */,
+				9FA9005B17FAA439006CD201 /* house@2x.png */,
+				9F8A5B3C17E822BB00641C59 /* image1.jpg */,
+				9FE1890F17E9463000D17345 /* image4.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		9FBA29C717E2B51100D428F1 = {
 			isa = PBXGroup;
 			children = (
@@ -220,29 +250,7 @@
 				9FA9004117F9547F006CD201 /* fontechServiceDetailPriceViewController.m */,
 				9F8571B317E6CBF100318A9F /* fontechListViewViewController.h */,
 				9F8571B417E6CBF100318A9F /* fontechListViewViewController.m */,
-				9FA9005B17FAA439006CD201 /* house@2x.png */,
-				9FA9005D17FAA46D006CD201 /* people_@2x.png */,
-				9FA9005F17FAA4B2006CD201 /* photos_polaroid@2x.png */,
-				9FA9006117FAA505006CD201 /* heart@2x.png */,
-				9FA9006317FAA58E006CD201 /* brief_case@2x.png */,
-				9FA9004317F96F20006CD201 /* project1.jpg */,
-				9FA9004417F96F20006CD201 /* project2.jpg */,
-				9FA9004F17F970BB006CD201 /* project3.jpg */,
-				9FA9004617F96F20006CD201 /* project4.jpg */,
-				9FA9004717F96F20006CD201 /* project5.jpg */,
-				9FA9004817F96F20006CD201 /* project6.jpg */,
-				9FA9005117F97329006CD201 /* designer1.jpg */,
-				9FA9005217F97329006CD201 /* designer2.jpg */,
-				9FA9005317F97329006CD201 /* designer3.jpg */,
-				9FA9005417F97329006CD201 /* designer4.jpg */,
-				9FA9005917F974DD006CD201 /* designer5.jpg */,
-				9F559E4F17F2DD6C001C9D18 /* inside1.jpg */,
-				9F559E5117F2E11F001C9D18 /* inside2.jpg */,
-				9F559E5317F2E12B001C9D18 /* inside3.jpg */,
-				9F8A5B3C17E822BB00641C59 /* image1.jpg */,
-				9F8A5B3D17E822BB00641C59 /* image2.jpg */,
-				9F8A5B3A17E822B000641C59 /* image3.jpg */,
-				9FE1890F17E9463000D17345 /* image4.jpg */,
+				9FA9006517FAA939006CD201 /* images */,
 				9FBA29EE17E2B51100D428F1 /* Images.xcassets */,
 				9FBA29DA17E2B51100D428F1 /* Supporting Files */,
 			);
