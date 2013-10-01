@@ -7,7 +7,7 @@
         <!--Fontech First View Controller - First-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="First" id="CZ4-MO-1fc" customClass="fontechFirstViewController" sceneMemberID="viewController">
+                <viewController title="First" wantsFullScreenLayout="YES" id="CZ4-MO-1fc" customClass="fontechFirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZTL-5V-26d"/>
                         <viewControllerLayoutGuide type="bottom" id="98G-HV-q6H"/>
@@ -41,7 +41,7 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Intro" image="house.png" id="u1e-5L-l1D"/>
-                    <navigationItem key="navigationItem" title="First" id="sL5-Te-k5O"/>
+                    <navigationItem key="navigationItem" title="Intro" id="sL5-Te-k5O"/>
                     <connections>
                         <outlet property="pageControl" destination="tEP-6T-Rb3" id="Cgy-ci-Tay"/>
                         <outlet property="scrollView" destination="AG8-g6-UEh" id="2XH-AJ-yc8"/>
@@ -49,7 +49,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="-138"/>
+            <point key="canvasLocation" x="904" y="-199"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="Ira-6m-7xq">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="eaL-f9-WWZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="0QB-B6-ybs"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Urd-J4-d8R">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="rootViewController" id="mU5-DC-c2D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixa-ps-BAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395" y="-192"/>
         </scene>
         <!--Fontech Service View Controller - Vogues-->
         <scene sceneID="3Hn-OP-iEo">
@@ -345,10 +361,10 @@
             </objects>
             <point key="canvasLocation" x="743" y="2191"/>
         </scene>
-        <!--Fontech Second View Controller - Second-->
+        <!--Fontech Second View Controller - Designers-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <viewController title="Second" id="QUy-BD-bpt" customClass="fontechSecondViewController" sceneMemberID="viewController">
+                <viewController title="Designers" id="QUy-BD-bpt" customClass="fontechSecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yve-2e-vcq"/>
                         <viewControllerLayoutGuide type="bottom" id="MBm-Rd-dWe"/>
@@ -381,6 +397,8 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Designers" image="people_.png" id="Z7h-1E-pvt"/>
+                    <navigationItem key="navigationItem" id="arx-by-FB0"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="pageControl" destination="bTU-bC-UPG" id="5P1-EK-RrJ"/>
                         <outlet property="scrollView" destination="8UA-V6-Qzb" id="Wf9-cu-P8Y"/>
@@ -388,7 +406,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="498"/>
+            <point key="canvasLocation" x="904" y="491"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="aST-Lk-cz3">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="d8L-t2-Xu3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Md6-ox-d3f"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EnQ-AS-XpV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="rootViewController" id="zGE-VR-ODP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tau-jb-duR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="383" y="503"/>
         </scene>
         <!--Fontech Vogues View Controller - Service-->
         <scene sceneID="A51-zJ-gtP">
@@ -397,7 +431,7 @@
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="85" sectionHeaderHeight="6" sectionFooterHeight="6" id="gLQ-u9-N2b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" restorationIdentifier="voguesCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="voguesCell" rowHeight="85" id="ZsD-Tx-uAf">
@@ -418,7 +452,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyb-eB-bxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1555" y="1348"/>
+            <point key="canvasLocation" x="904" y="1244"/>
         </scene>
         <!--Fontech Service Detail View Controller-->
         <scene sceneID="YNu-uA-wWx">
@@ -427,7 +461,7 @@
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="85" sectionHeaderHeight="6" sectionFooterHeight="6" id="bGl-kN-dxU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" restorationIdentifier="serviceDetailCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="serviceDetailCell" rowHeight="85" id="fUN-yb-8dI">
                                 <rect key="frame" x="0.0" y="55" width="320" height="85"/>
@@ -455,7 +489,7 @@
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="o23-JH-bHF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="B0S-sa-BGf">
                                 <rect key="frame" x="0.0" y="55" width="320" height="44"/>
@@ -490,7 +524,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVJ-Qe-pwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="721" y="1324"/>
+            <point key="canvasLocation" x="395" y="1256"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
@@ -504,13 +538,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
-                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
-                        <segue destination="YjX-nn-Py8" kind="relationship" relationship="viewControllers" id="bXH-vY-wNC"/>
-                        <segue destination="OUe-zY-56G" kind="relationship" relationship="viewControllers" id="WjT-Ku-Ijm"/>
-                        <segue destination="3j7-NS-iFR" kind="relationship" relationship="viewControllers" id="MuC-ot-MJO"/>
-                        <segue destination="NHe-0p-Czl" kind="relationship" relationship="viewControllers" id="QSf-sm-EXo"/>
-                        <segue destination="2Es-dx-0GZ" kind="relationship" relationship="viewControllers" id="ogk-yS-Ma9"/>
+                        <segue destination="eaL-f9-WWZ" kind="relationship" relationship="viewControllers" id="TFl-2s-lrE"/>
+                        <segue destination="d8L-t2-Xu3" kind="relationship" relationship="viewControllers" id="Few-UO-4Cu"/>
+                        <segue destination="YjX-nn-Py8" kind="relationship" relationship="viewControllers" id="Ni1-tg-GMM"/>
+                        <segue destination="OUe-zY-56G" kind="relationship" relationship="viewControllers" id="KIq-V0-kxE"/>
+                        <segue destination="3j7-NS-iFR" kind="relationship" relationship="viewControllers" id="XOx-z9-pZk"/>
+                        <segue destination="NHe-0p-Czl" kind="relationship" relationship="viewControllers" id="Hkd-RS-PTa"/>
+                        <segue destination="2Es-dx-0GZ" kind="relationship" relationship="viewControllers" id="FnV-Be-RN9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
