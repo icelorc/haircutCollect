@@ -39,6 +39,7 @@
         fontechIntroView *introView = [[fontechIntroView alloc] initWithFrame:CGRectMake(frame.origin.x + 10, frame.origin.y + 10, self.scrollView.frame.size.width - 20, self.scrollView.frame.size.height - 10)];
         introView.imageView.image = [UIImage imageNamed:[viewArray objectAtIndex:i]];
         introView.textView.text = @"設計師 Ting Shih作品_美麗佳人雜誌";
+        introView.textView.editable = NO;
         [self.scrollView addSubview:introView];
     }
     //Set the content size of our scrollview according to the total width of our imageView objects.

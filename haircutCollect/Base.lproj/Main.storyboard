@@ -40,7 +40,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Intro" image="first" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Intro" image="house.png" id="u1e-5L-l1D"/>
                     <navigationItem key="navigationItem" title="First" id="sL5-Te-k5O"/>
                     <connections>
                         <outlet property="pageControl" destination="tEP-6T-Rb3" id="Cgy-ci-Tay"/>
@@ -313,11 +313,11 @@
             </objects>
             <point key="canvasLocation" x="743" y="4072"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Profile-->
         <scene sceneID="FiM-dB-3j9">
             <objects>
                 <navigationController definesPresentationContext="YES" id="3j7-NS-iFR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="first" id="kyB-hN-yRr"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="brief_case.png" id="kyB-hN-yRr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="smc-wc-Q4J">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -329,11 +329,11 @@
             </objects>
             <point key="canvasLocation" x="743" y="3195"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Vogues-->
         <scene sceneID="reb-Mn-OYT">
             <objects>
                 <navigationController definesPresentationContext="YES" id="OUe-zY-56G" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="second" id="Xhv-az-s1w"/>
+                    <tabBarItem key="tabBarItem" title="Vogues" image="heart.png" id="Xhv-az-s1w"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ka5-pZ-NrH">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -380,7 +380,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="Designers" image="people_.png" id="Z7h-1E-pvt"/>
                     <connections>
                         <outlet property="pageControl" destination="bTU-bC-UPG" id="5P1-EK-RrJ"/>
                         <outlet property="scrollView" destination="8UA-V6-Qzb" id="Wf9-cu-P8Y"/>
@@ -480,7 +480,7 @@
         <scene sceneID="T8v-mO-XbY">
             <objects>
                 <navigationController definesPresentationContext="YES" id="YjX-nn-Py8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Service" image="first" id="Jzm-a7-kL9"/>
+                    <tabBarItem key="tabBarItem" title="Service" image="photos_polaroid.png" id="Jzm-a7-kL9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gxi-CS-Joy">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -565,8 +565,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="brief_case.png" width="26" height="26"/>
+        <image name="heart.png" width="26" height="26"/>
+        <image name="house.png" width="26" height="26"/>
         <image name="image4.jpg" width="800" height="585"/>
+        <image name="people_.png" width="26" height="26"/>
+        <image name="photos_polaroid.png" width="26" height="26"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
