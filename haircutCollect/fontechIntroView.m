@@ -24,6 +24,7 @@
         self.textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 230, 280, 150)];
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 30, 300, 200)];
         self.backgroundColor = [UIColor whiteColor];
+        self.textView.editable = NO;
         [self addSubview:self.textView];
         [self addSubview:self.imageView];
     }
