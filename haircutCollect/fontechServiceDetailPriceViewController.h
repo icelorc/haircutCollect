@@ -10,4 +10,10 @@
 
 @interface fontechServiceDetailPriceViewController : UITableViewController
 
+@property (nonatomic, retain) NSArray *nameArray;
+@property (nonatomic, retain) NSArray *itemArray;
+@property (nonatomic, retain) NSArray *priceArray;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *priceLabel;
+
 @end

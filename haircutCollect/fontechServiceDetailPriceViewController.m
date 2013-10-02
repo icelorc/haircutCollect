@@ -14,11 +14,20 @@
 
 @implementation fontechServiceDetailPriceViewController
 
+@synthesize nameArray = _nameArray;
+@synthesize itemArray = _itemArray;
+@synthesize priceArray = _priceArray;
+@synthesize nameLabel = _nameLabel;
+@synthesize priceLabel = _priceLabel;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         self = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"fontechServiceDetailPriceViewController"];
+        self.itemArray = [NSArray arrayWithObjects:@"Stylist", @"Senior Stylist", @"Top Stylist", @"Artistic Team", @"Artistic Director", nil];
+        self.nameArray = [NSArray arrayWithObjects:@"Jovi Chang", @"Paul Wei", @"Marvin Lin", @"Lounes Chen", @"Erica Lin", nil];
+        self.priceArray = [NSArray arrayWithObjects:@"NT$ 1,200", @"NT$ 2,500", @"NT$ 2,500", @"NT$ 3,200", @"NT$ 4,800", nil];
     
     }
     return self;
@@ -46,13 +55,17 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 5;
+    return [self.itemArray count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 3;
+    return [self.nameArray count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [self.itemArray objectAtIndex:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -60,7 +73,12 @@
     static NSString *CellIdentifier = @"fontechServiceDetailPriceCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+        UILabel *itemLabel = (UILabel *)[cell viewWithTag:100];
+        UILabel *detailLabel = (UILabel *)[cell viewWithTag:101];
+        itemLabel.text = [self.nameArray objectAtIndex:indexPath.row];
+        detailLabel.text = [self.priceArray objectAtIndex:indexPath.row];
+        
+
     
     return cell;
 }
