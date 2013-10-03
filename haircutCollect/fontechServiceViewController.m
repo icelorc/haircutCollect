@@ -60,26 +60,17 @@
 {
     static NSString *CellIdentifier = @"serviceCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    UIImageView *designerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 0, 85, 85)];
+    UIImageView *designerImageView = (UIImageView *)[cell viewWithTag:10];
     designerImageView.image = [UIImage imageNamed:[self.imageArray objectAtIndex:indexPath.section]];
 
-    UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 15, 150, 15)];
-    nameLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 35, 150, 15)];
-    titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
-    UILabel *telLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 47, 150, 15)];
-    telLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10];
+    UILabel *nameLabel = (UILabel *)[cell viewWithTag:11];
+    UILabel *titleLabel = (UILabel *)[cell viewWithTag:12];
+    UILabel *telLabel = (UILabel *)[cell viewWithTag:13];
     
     nameLabel.text = [self.nameArray objectAtIndex:indexPath.section];
     titleLabel.text = @"Artistic Director";
     telLabel.text = @"預約專線：02 -2702-7088";
-    
-    
-    [cell addSubview:designerImageView];
-    [cell addSubview:nameLabel];
-    [cell addSubview:titleLabel];
-    [cell addSubview:telLabel];
-    
+     
     return cell;
 }
 
