@@ -449,7 +449,7 @@
         <scene sceneID="A51-zJ-gtP">
             <objects>
                 <tableViewController id="CtN-BH-6lZ" customClass="fontechVoguesViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="85" sectionHeaderHeight="6" sectionFooterHeight="6" id="gLQ-u9-N2b">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="85" sectionHeaderHeight="6" sectionFooterHeight="1" id="gLQ-u9-N2b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -479,7 +479,7 @@
         <scene sceneID="YNu-uA-wWx">
             <objects>
                 <tableViewController storyboardIdentifier="fontechServiceDetailViewController" id="ZOS-3u-BIa" customClass="fontechServiceDetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="85" sectionHeaderHeight="6" sectionFooterHeight="6" id="bGl-kN-dxU">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="85" sectionHeaderHeight="6" sectionFooterHeight="1" id="bGl-kN-dxU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
