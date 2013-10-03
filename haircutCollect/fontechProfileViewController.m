@@ -15,6 +15,7 @@
 @implementation fontechProfileViewController
 @synthesize phoneButton = _phoneButton;
 @synthesize addressButton = _addressButton;
+@synthesize shareButton = _shareButton;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -29,11 +30,7 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,6 +50,8 @@
 
 - (IBAction)addressButtonAction:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://maps.apple.com/?daddr=2F.,+No.263,+Sec.+1,+Dunhua+S+Rd.,+Da'an+Dist,+Taipei+City"]];
+    
+    
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger )buttonIndex {
@@ -64,6 +63,13 @@
          [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:0227027088"]];
     }
 
+}
+
+- (IBAction) shareAction:(id)sender {
+
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[@"TEST"] applicationActivities:nil];
+    [self presentViewController:activityViewController animated:YES completion:nil];
+    
 }
 
 

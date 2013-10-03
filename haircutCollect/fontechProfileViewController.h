@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *phoneButton;
 @property (weak, nonatomic) IBOutlet UIButton *addressButton;
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;
 
 @end

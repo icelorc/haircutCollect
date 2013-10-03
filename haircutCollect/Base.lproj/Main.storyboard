@@ -257,6 +257,18 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VNn-fl-rD7" id="rCt-Ac-Hdu">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdx-2d-046">
+                                                    <rect key="frame" x="20" y="7" width="40" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Share">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="shareAction:" destination="Hoi-at-oY5" eventType="touchUpInside" id="z3i-Ur-P5c"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -267,6 +279,7 @@
                     <connections>
                         <outlet property="addressButton" destination="syW-Pd-XgV" id="S5P-br-8e7"/>
                         <outlet property="phoneButton" destination="hPG-7i-o92" id="CD4-V2-jmR"/>
+                        <outlet property="shareButton" destination="Kdx-2d-046" id="FAL-ES-MZB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QcL-Uj-6NH" userLabel="First Responder" sceneMemberID="firstResponder"/>
