@@ -7,11 +7,13 @@
 //
 
 #import "fontechAppDelegate.h"
+#import "TestFlight+AsyncLogging.h"
 
 @implementation fontechAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //[TestFlight takeOff:@"a872a0cf-84a5-467e-b605-8be4310149bf"];
     // Override point for customization after application launch.
     return YES;
 }

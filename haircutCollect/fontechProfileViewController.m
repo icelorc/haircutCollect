@@ -42,7 +42,7 @@
 - (IBAction)phoneButtonAction:(id)sender {
 
 
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Announcement" message: @"It turns out that you are playing Addicus!" delegate: self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK",nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Flux Collection Hair Boutique" message: @"02-27027088" delegate: self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK",nil];
     
     [alert show];
 

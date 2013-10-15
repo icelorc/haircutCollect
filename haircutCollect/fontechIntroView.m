@@ -21,7 +21,7 @@
         [self.layer setBorderColor:[UIColor lightGrayColor].CGColor ];
         [self.layer setBorderWidth:1.5f];
         [self.layer setCornerRadius:15.0f];
-        self.textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 230, 280, 150)];
+        self.textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 230, 280, 180)];
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 30, 300, 200)];
         self.backgroundColor = [UIColor whiteColor];
         self.textView.editable = NO;
