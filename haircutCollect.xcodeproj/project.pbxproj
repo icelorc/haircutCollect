@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9F263DB317F4206500B87D63 /* fontechServiceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F263DB217F4206500B87D63 /* fontechServiceDetailViewController.m */; };
+		9F527E52181F73B200321B22 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F527E4C181F73B200321B22 /* libTestFlight.a */; };
+		9F527E53181F73B200321B22 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F527E4D181F73B200321B22 /* README.md */; };
+		9F527E54181F73B200321B22 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F527E4E181F73B200321B22 /* release_notes.md */; };
 		9F559E5017F2DD6C001C9D18 /* inside1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F559E4F17F2DD6C001C9D18 /* inside1.jpg */; };
 		9F559E5217F2E11F001C9D18 /* inside2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F559E5117F2E11F001C9D18 /* inside2.jpg */; };
 		9F559E5417F2E12B001C9D18 /* inside3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F559E5317F2E12B001C9D18 /* inside3.jpg */; };
@@ -55,9 +58,6 @@
 		9FD7ABC31807E7A700030A33 /* designer3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD7ABBE1807E7A700030A33 /* designer3.jpg */; };
 		9FD7ABC41807E7A700030A33 /* designer4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD7ABBF1807E7A700030A33 /* designer4.jpg */; };
 		9FD7ABC51807E7A700030A33 /* designer5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD7ABC01807E7A700030A33 /* designer5.jpg */; };
-		9FD7ABCD1807EB6F00030A33 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD7ABC71807EB6F00030A33 /* libTestFlight.a */; };
-		9FD7ABCE1807EB6F00030A33 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9FD7ABC81807EB6F00030A33 /* README.md */; };
-		9FD7ABCF1807EB6F00030A33 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 9FD7ABC91807EB6F00030A33 /* release_notes.md */; };
 		9FD7ABD11807EC1500030A33 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD7ABD01807EC1500030A33 /* libz.dylib */; };
 		9FE1891017E9463000D17345 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FE1890F17E9463000D17345 /* image4.jpg */; };
 /* End PBXBuildFile section */
@@ -75,6 +75,12 @@
 /* Begin PBXFileReference section */
 		9F263DB117F4206500B87D63 /* fontechServiceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontechServiceDetailViewController.h; sourceTree = "<group>"; };
 		9F263DB217F4206500B87D63 /* fontechServiceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fontechServiceDetailViewController.m; sourceTree = "<group>"; };
+		9F527E4C181F73B200321B22 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		9F527E4D181F73B200321B22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9F527E4E181F73B200321B22 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		9F527E4F181F73B200321B22 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		9F527E50181F73B200321B22 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		9F527E51181F73B200321B22 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		9F559E4F17F2DD6C001C9D18 /* inside1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inside1.jpg; sourceTree = "<group>"; };
 		9F559E5117F2E11F001C9D18 /* inside2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inside2.jpg; sourceTree = "<group>"; };
 		9F559E5317F2E12B001C9D18 /* inside3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inside3.jpg; sourceTree = "<group>"; };
@@ -138,12 +144,6 @@
 		9FD7ABBE1807E7A700030A33 /* designer3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = designer3.jpg; sourceTree = "<group>"; };
 		9FD7ABBF1807E7A700030A33 /* designer4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = designer4.jpg; sourceTree = "<group>"; };
 		9FD7ABC01807E7A700030A33 /* designer5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = designer5.jpg; sourceTree = "<group>"; };
-		9FD7ABC71807EB6F00030A33 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		9FD7ABC81807EB6F00030A33 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		9FD7ABC91807EB6F00030A33 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
-		9FD7ABCA1807EB6F00030A33 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		9FD7ABCB1807EB6F00030A33 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
-		9FD7ABCC1807EB6F00030A33 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		9FD7ABD01807EC1500030A33 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		9FE1890F17E9463000D17345 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,11 +153,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F527E52181F73B200321B22 /* libTestFlight.a in Frameworks */,
 				9FD7ABD11807EC1500030A33 /* libz.dylib in Frameworks */,
 				9FBA29D617E2B51100D428F1 /* CoreGraphics.framework in Frameworks */,
 				9FBA29D817E2B51100D428F1 /* UIKit.framework in Frameworks */,
 				9FBA29D417E2B51100D428F1 /* Foundation.framework in Frameworks */,
-				9FD7ABCD1807EB6F00030A33 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +174,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F527E4B181F73B200321B22 /* TestFlightSDK2.0.2 */ = {
+			isa = PBXGroup;
+			children = (
+				9F527E4C181F73B200321B22 /* libTestFlight.a */,
+				9F527E4D181F73B200321B22 /* README.md */,
+				9F527E4E181F73B200321B22 /* release_notes.md */,
+				9F527E4F181F73B200321B22 /* TestFlight+AsyncLogging.h */,
+				9F527E50181F73B200321B22 /* TestFlight+ManualSessions.h */,
+				9F527E51181F73B200321B22 /* TestFlight.h */,
+			);
+			path = TestFlightSDK2.0.2;
+			sourceTree = "<group>";
+		};
 		9FA9006517FAA939006CD201 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +220,6 @@
 		9FBA29C717E2B51100D428F1 = {
 			isa = PBXGroup;
 			children = (
-				9FD7ABC61807EB6F00030A33 /* TestFlightSDK2 */,
 				9FBA29D917E2B51100D428F1 /* haircutCollect */,
 				9FBA29FB17E2B51100D428F1 /* haircutCollectTests */,
 				9FBA29D217E2B51100D428F1 /* Frameworks */,
@@ -239,6 +251,7 @@
 		9FBA29D917E2B51100D428F1 /* haircutCollect */ = {
 			isa = PBXGroup;
 			children = (
+				9F527E4B181F73B200321B22 /* TestFlightSDK2.0.2 */,
 				9FBD661017F13CD100CAF5BE /* Views */,
 				9FBA29E217E2B51100D428F1 /* fontechAppDelegate.h */,
 				9FBA29E317E2B51100D428F1 /* fontechAppDelegate.m */,
@@ -310,19 +323,6 @@
 				9F8571B117E6BF8C00318A9F /* fontechIntroView.m */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		9FD7ABC61807EB6F00030A33 /* TestFlightSDK2 */ = {
-			isa = PBXGroup;
-			children = (
-				9FD7ABC71807EB6F00030A33 /* libTestFlight.a */,
-				9FD7ABC81807EB6F00030A33 /* README.md */,
-				9FD7ABC91807EB6F00030A33 /* release_notes.md */,
-				9FD7ABCA1807EB6F00030A33 /* TestFlight+AsyncLogging.h */,
-				9FD7ABCB1807EB6F00030A33 /* TestFlight+ManualSessions.h */,
-				9FD7ABCC1807EB6F00030A33 /* TestFlight.h */,
-			);
-			path = TestFlightSDK2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,7 +409,7 @@
 				9FD7ABBB1807E73100030A33 /* image3.jpg in Resources */,
 				9FD7ABBA1807E73100030A33 /* image2.jpg in Resources */,
 				9FA9006017FAA4B2006CD201 /* photos_polaroid@2x.png in Resources */,
-				9FD7ABCF1807EB6F00030A33 /* release_notes.md in Resources */,
+				9F527E54181F73B200321B22 /* release_notes.md in Resources */,
 				9FA9005017F970BB006CD201 /* project3.jpg in Resources */,
 				9FA9004A17F96F20006CD201 /* project2.jpg in Resources */,
 				9FA9004C17F96F20006CD201 /* project4.jpg in Resources */,
@@ -421,7 +421,7 @@
 				9F559E5217F2E11F001C9D18 /* inside2.jpg in Resources */,
 				9FD7ABC51807E7A700030A33 /* designer5.jpg in Resources */,
 				9F559E5017F2DD6C001C9D18 /* inside1.jpg in Resources */,
-				9FD7ABCE1807EB6F00030A33 /* README.md in Resources */,
+				9F527E53181F73B200321B22 /* README.md in Resources */,
 				9FD7ABB91807E73100030A33 /* image1.jpg in Resources */,
 				9FA9005E17FAA46D006CD201 /* people_@2x.png in Resources */,
 				9FBA29DE17E2B51100D428F1 /* InfoPlist.strings in Resources */,
@@ -593,12 +593,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "haircutCollect/haircutCollect-Prefix.pch";
 				INFOPLIST_FILE = "haircutCollect/haircutCollect-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/icelorc/Documents/iOS/haircutCollect/TestFlightSDK2,
+					/Users/icelorc/Documents/iOS/haircutCollect/haircutCollect/TestFlightSDK2.0.2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -613,12 +616,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "haircutCollect/haircutCollect-Prefix.pch";
 				INFOPLIST_FILE = "haircutCollect/haircutCollect-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/icelorc/Documents/iOS/haircutCollect/TestFlightSDK2,
+					/Users/icelorc/Documents/iOS/haircutCollect/haircutCollect/TestFlightSDK2.0.2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
